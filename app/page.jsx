@@ -106,18 +106,20 @@ export default function RyskoAiLandingPage() {
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#070b1b]/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#" className="flex items-center">
-            <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white p-1.5 shadow-[0_0_30px_rgba(34,211,238,0.22)] ring-1 ring-white/10">
-              <Image
-                src="/logo.png"
-                alt="Rysko AI Logo"
-                width={56}
-                height={56}
-                className="h-full w-full rounded-xl object-contain"
-                priority
-              />
-            </div>
+          <a href="#" className="flex items-center gap-">
+            <Image
+              src="/logo_clean.png"
+              alt="Rysko AI Logo"
+              width={92}
+              height={92}
+              className="object-contain translate-y-[1px]"
+            />
+
+            <span className="text-lg font-semibold bg-gradient-to-r from-cyan-300 to-violet-400 bg-clip-text text-transparent">
+              Rysko AI
+            </span>
           </a>
+
           <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
             <a href="#services" className="transition hover:text-white">
               Services
@@ -461,15 +463,13 @@ export default function RyskoAiLandingPage() {
           <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
             <div>
               <div className="flex items-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white p-1.5 shadow-[0_0_30px_rgba(34,211,238,0.22)] ring-1 ring-white/10">
-                  <Image
-                    src="/logo.png"
-                    alt="Rysko AI Logo"
-                    width={56}
-                    height={56}
-                    className="h-full w-full rounded-xl object-contain"
-                  />
-                </div>
+                <Image
+                  src="/logo.png"
+                  alt="Rysko AI Logo"
+                  width={72}
+                  height={72}
+                  className="h-14 w-14 object-contain md:h-16 md:w-16"
+                />
                 <div>
                   <div className="text-lg font-semibold text-white">
                     Rysko AI
