@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function VerixaAiLandingPage() {
+export default function RyskoAiLandingPage() {
   const [selectedPlan, setSelectedPlan] = useState("Growth");
   const [email, setEmail] = useState("");
   const [link, setLink] = useState("");
@@ -68,12 +69,12 @@ export default function VerixaAiLandingPage() {
     {
       name: "Aarav Mehta",
       location: "Bengaluru, India",
-      text: "Verixa AI helped us catch hallucinations we completely missed during internal testing. The report was clear and actionable.",
+      text: "Rysko AI helped us catch hallucinations we completely missed during internal testing. The report was clear and actionable.",
     },
     {
       name: "Emily Carter",
       location: "Austin, Texas",
-      text: "We used Verixa before launch and found risky prompt behaviors early. It saved us from shipping a weak experience.",
+      text: "We used Rysko AI before launch and found risky prompt behaviors early. It saved us from shipping a weak experience.",
     },
     {
       name: "Rohit Sharma",
@@ -83,7 +84,7 @@ export default function VerixaAiLandingPage() {
     {
       name: "Daniel Kim",
       location: "Seoul, South Korea",
-      text: "The prompt injection findings were especially valuable. Verixa made our AI product feel much safer before release.",
+      text: "The prompt injection findings were especially valuable. Rysko AI made our AI product feel much safer before release.",
     },
     {
       name: "Sophia Martinez",
@@ -105,19 +106,20 @@ export default function VerixaAiLandingPage() {
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#070b1b]/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 text-lg font-bold text-white">
-              V
+          <a href="#" className="flex items-center">
+            <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white p-1.5 shadow-[0_0_30px_rgba(34,211,238,0.22)] ring-1 ring-white/10">
+              <Image
+                src="/logo.jpeg"
+                alt="Rysko AI Logo"
+                width={56}
+                height={56}
+                className="h-full w-full rounded-xl object-contain"
+                priority
+              />
             </div>
-            <div>
-              <div className="text-lg font-semibold text-white">Verixa AI</div>
-              <div className="text-xs text-white/60">
-                AI risk and hallucination detection
-              </div>
-            </div>
-          </div>
+          </a>
 
-          <nav className="hidden md:flex items-center gap-8 text-sm text-white/70">
+          <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
             <a href="#services" className="transition hover:text-white">
               Services
             </a>
@@ -154,7 +156,7 @@ export default function VerixaAiLandingPage() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/70">
-              Verixa AI helps startups and product teams detect hallucinations,
+              Rysko AI helps startups and product teams detect hallucinations,
               prompt injection failures, unsafe behavior, and trust-breaking
               mistakes in chatbots, LLMs, and AI agents.
             </p>
@@ -459,13 +461,19 @@ export default function VerixaAiLandingPage() {
         <div className="mx-auto max-w-6xl px-6 py-14">
           <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
             <div>
-              <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 text-sm font-bold text-white shadow-[0_0_24px_rgba(34,211,238,0.18)]">
-                  V
+              <div className="flex items-center gap-4">
+                <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white p-1.5 shadow-[0_0_30px_rgba(34,211,238,0.22)] ring-1 ring-white/10">
+                  <Image
+                    src="/logo.jpeg"
+                    alt="Rysko AI Logo"
+                    width={56}
+                    height={56}
+                    className="h-full w-full rounded-xl object-contain"
+                  />
                 </div>
                 <div>
                   <div className="text-lg font-semibold text-white">
-                    Verixa AI
+                    Rysko AI
                   </div>
                   <div className="text-xs text-white/50">
                     AI risk and hallucination detection
@@ -518,7 +526,7 @@ export default function VerixaAiLandingPage() {
             <div>
               <div className="text-sm font-semibold text-white">Contact</div>
               <div className="mt-5 space-y-3 text-sm text-white/60">
-                <div>hello@verixa.ai</div>
+                <div>hello@rysko.ai</div>
                 <div>Fast AI risk audits</div>
                 <div>24–48 hour turnaround</div>
               </div>
@@ -528,7 +536,7 @@ export default function VerixaAiLandingPage() {
           <div className="mt-10 h-px w-full bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent" />
 
           <div className="mt-6 flex flex-col gap-3 text-center text-sm text-white/45 md:flex-row md:items-center md:justify-between">
-            <div>© {new Date().getFullYear()} Verixa AI. All rights reserved.</div>
+            <div>© {new Date().getFullYear()} Rysko AI. All rights reserved.</div>
             <div className="flex items-center justify-center gap-5">
               <a href="#" className="transition hover:text-white">
                 Privacy
@@ -543,4 +551,3 @@ export default function VerixaAiLandingPage() {
     </div>
   );
 }
-
