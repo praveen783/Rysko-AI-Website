@@ -118,7 +118,6 @@ export default function RyskoAiLandingPage() {
               />
             </div>
           </a>
-
           <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
             <a href="#services" className="transition hover:text-white">
               Services
@@ -464,7 +463,7 @@ export default function RyskoAiLandingPage() {
               <div className="flex items-center gap-4">
                 <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white p-1.5 shadow-[0_0_30px_rgba(34,211,238,0.22)] ring-1 ring-white/10">
                   <Image
-                    src="/logo.jpeg"
+                    src="/logo.png"
                     alt="Rysko AI Logo"
                     width={56}
                     height={56}
